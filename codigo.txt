@@ -1,0 +1,15 @@
+<script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+----------------------------------------------------------------------------------------------------------------------------
+        const element = document.querySelector(elementId);
+        element.addEventListener("collide", (e) => {
+          if (elementId.includes("#ring")) {
+            console.log(elementId + " collision");
+          } else if (elementId.includes("#hurdle")) {
+            console.log("bird collision");
+          }
+        });
+----------------------------------------------------------------------------------------
+      update: function () {
+        this.isCollided(this.data.elementId);
+      },
+--------------------------------------------------------------------------------
